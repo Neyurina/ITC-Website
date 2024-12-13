@@ -1,0 +1,493 @@
+a:link { 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    text-decoration: none; 
+} 
+
+a:active { 
+    text-decoration: none; 
+}
+
+/*Part 1 and 2 Page*/
+
+/*Box1 & 2*/
+.cont {
+    position: relative;
+    top: 60px;
+    height: auto; /* Allow height to adjust dynamically */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Add spacing between boxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add spacing between elements */
+    padding: 20px;
+}
+
+.box1, .box2 {
+    flex: 1; /* Distribute width equally */
+    min-width: 45%; /* Ensure boxes don’t shrink too much on smaller screens */
+    height: auto; /* Let content control the height */
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.box1 h3, .box2 h3 {
+    font-family: "Roboto", serif;
+    font-size: 2rem; /* Use rem for scalable font sizes */
+    text-align: center; /* Center the heading */
+    color: antiquewhite;
+    background: rgba(31, 40, 139, 0.3);
+    width: 90%; /* Use percentage to make width responsive */
+    max-width: 500px; /* Limit the maximum width */
+    margin: 0 auto 20px auto; /* Center-align and add spacing */
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.box1 h4, .box2 h4 {
+    font-family: "Roboto", serif;
+    font-size: 1.2rem; /* Use rem for scalable font sizes */
+    text-align: justify; /* Justify the text for neatness */
+    color: antiquewhite;
+    background: rgba(31, 40, 139, 0.3);
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 750px; /* Limit the maximum width */
+    margin: 0 auto; /* Center-align */
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center-align boxes */
+    }
+
+    .box1, .box2 {
+        width: 100%; /* Full width for each box */
+    }
+
+    .box1 h3, .box2 h3, .box1 h4, .box2 h4 {
+        width: 95%; /* Slightly reduce content width for smaller screens */
+    }
+}
+
+
+/*Box4 & 5*/
+
+.cont {
+    position: relative;
+    top: 60px;
+    height: auto; /* Allow height to adjust dynamically */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Add spacing between boxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add spacing between elements */
+    padding: 20px;
+}
+
+.box4, .box5 {
+    flex: 1; /* Distribute width equally */
+    min-width: 45%; /* Ensure boxes don’t shrink too much on smaller screens */
+    height: auto; /* Let content control the height */
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.box4 h3, .box5 h3 {
+    font-family: "Roboto", serif;
+    font-size: 2rem; /* Use rem for scalable font sizes */
+    text-align: center; /* Center the heading */
+    color: antiquewhite;
+    background: rgba(31, 40, 139, 0.3);
+    width: 90%; /* Use percentage to make width responsive */
+    max-width: 500px; /* Limit the maximum width */
+    margin: 0 auto 20px auto; /* Center-align and add spacing */
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.box4 h4, .box5 h4 {
+    font-family: "Roboto", serif;
+    font-size: 1.2rem; /* Use rem for scalable font sizes */
+    text-align: justify; /* Justify the text for neatness */
+    color: antiquewhite;
+    background: rgba(31, 40, 139, 0.3);
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 750px; /* Limit the maximum width */
+    margin: 0 auto; /* Center-align */
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center-align boxes */
+    }
+
+    .box4, .box5 {
+        width: 100%; /* Full width for each box */
+    }
+
+    .box4 h3, .box5 h3, .box4 h4, .box5 h4 {
+        width: 95%; /* Slightly reduce content width for smaller screens */
+    }
+}
+
+
+.num-sys-def {
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    justify-content: center;
+}
+
+.num-sys-def h1, .num-sys-def h2 {
+    text-align: center;
+    margin: 0;                /* Remove margin to avoid misalignment */
+}
+
+.num-sys-def h1 {
+    width: 100%;              /* Make sure the width is flexible */
+}
+
+.title{
+    top: 80px;
+    text-align: center;
+    background: rgba(31, 40, 139, 0.3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 500px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-left:5%;
+    margin-top: 7%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+    margin: 0 auto;               /* Centers the element horizontally */
+    display: block;
+}
+
+.title2{
+    top: 30px;
+    text-align: center;
+    background: rgba(31, 40, 139, 0.3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 500px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-left:5%;
+    margin-top: 7%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+    margin: 0 auto;               /* Centers the element horizontally */
+    display: block;
+}
+
+.title3{
+    top: 58px;
+    text-align: center;
+    background: rgba(31, 40, 139, 0.3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 500px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-left:5%;
+    margin-top: 7%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+    margin: 0 auto;               /* Centers the element horizontally */
+    display: block;
+}
+
+
+.comp-sci{
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 2.5%;
+}
+
+.comp-eng{
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 2.5%;
+}
+
+.info-tech{
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 2.5%;
+}
+
+.inf-sys{
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 2.5%;
+}
+
+.sfw-eng{
+    background-image: linear-gradient(rgba(0, 195, 255, 0.312), rgb(29, 31, 33));
+    border-radius: 2.5%;
+}
+
+
+.bg-pic{
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    text-align: center;
+    float: right;
+    margin-right: 40%;
+    transform: scale(0.8);
+    border-radius: 50%;
+    margin-bottom: 40px; /* Adds vertical spacing */
+    margin-top: 40px;
+}
+
+.bg-pic2{
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    text-align: center;
+    float: right;
+    margin-right: 40%;
+    transform: scale(0.8);
+    border-radius: 50%;
+    margin-bottom: 40px; /* Adds vertical spacing */
+    padding-bottom: 40px;
+    
+}
+
+.bg-pic3{
+    width: 1px;
+    height: 2px;
+    font-size: 1px;
+    text-align: center;
+    float: right;
+    margin-right: 40%;
+    transform: scale(0.8);
+    border-radius: 50%;
+    margin-bottom: 60px; /* Adds vertical spacing */
+    margin-top: 40px;
+}
+
+.bg-pic4{
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    text-align: center;
+    float: right;
+    margin-right: 40%;
+    transform: scale(0.8);
+    border-radius: 50%;
+    margin-bottom: 40px; /* Adds vertical spacing */
+    margin-top: 40px;
+}
+
+.bg-pic5{
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    text-align: center;
+    float: right;
+    margin-right: 40%;
+    transform: scale(0.8);
+    border-radius: 50%;
+    margin-bottom: 40px; /* Adds vertical spacing */
+    margin-top: 40px;
+}
+.bg-pic img{
+    border-radius: 15%;
+    display: block; /* Ensures image behaves like a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    height: 470px;
+    width: 700px;
+    border: 5px solid #0004f90d;
+}
+
+.bg-pic2 img{
+    border-radius: 15%;
+    display: block; /* Ensures image behaves like a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 30px; /* Move the second image lower */
+    width: 700px;
+    height: 420px;
+    border: 5px solid #0004f90d;
+}
+
+.bg-pic3 img{
+    border-radius: 15%;
+    display: block; /* Ensures image behaves like a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 0px; /* Move the second image lower */
+    height: 550px;
+    width: 700px;
+    border: 5px solid #0004f90d;
+}
+
+.bg-pic4 img{
+    border-radius: 15%;
+    display: block; /* Ensures image behaves like a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 0px; /* Move the second image lower */
+    height: 550px;
+    width: 700px;
+    border: 5px solid #0004f90d;
+}
+
+/* Add background image to the right side */
+.part3-body {
+    position: relative; /* Allows overlay positioning */
+    background: url('images/bgimg12.jpg') no-repeat right center;
+    background-size: cover; /* Ensures the image covers the background */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0;
+}
+
+/* Dark overlay on top of the background image */
+.part3-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.733); /* Dark transparent overlay */
+    z-index: 1;
+}
+
+/* Content inside .part3-body remains on top of the overlay */
+.part3-body * {
+    position: relative;
+    z-index: 2;
+}
+
+.part3-body h1{
+    text-align: center;
+    background: rgba(31, 40, 139, 0.3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 300px;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left:5%;
+    margin-top: 7%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+}
+
+.part3-body h2{
+    background: rgba(2, 106, 141, 0.2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 600px;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left:7%;
+    margin-top: 2%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+}
+
+.pt3-text1{
+    height: 450px;
+}
+
+.pt3-text1 h1{
+    top: 20px;
+}
+
+.pt3-text1 h2{
+    top: 20px;
+}
+
+.pt3-text2{
+    height: 395px;
+    top: 20px;
+}
+
+.pt3-text2 h1{
+    margin-top: 150px;
+}
+
+.pt3-text3{
+    height: 500px;
+}
+
+.pt3-text3 h1{
+    top: 25px;
+}
+
+.pt3-text3 h2{
+    top: 20px;
+}
+
+.pt3-text4{
+    height: 500px;
+}
+
+.pt3-text4 h1{
+    top: 25px;
+}
+
+.pt3-text4 h2{
+    top: 20px;
+}
+
+
+/*Navbar Code*/
+.navbar {
+    background-color: rgb(9, 66, 82); /* Semi-transparent white */
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 10; /* Ensure it’s above other content */
+    box-shadow: 0px 2px 5px rgba(86, 87, 88, 0.2); /* Add shadow for better visibility */
+    opacity: 0.5;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style: none; 
+    margin: 0;
+    padding: 10px 0; 
+}
+
+.navbar li {
+    margin: 0 33px; /* Space between links */
+}
+
+.navbar li:hover{
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    color: #00f7ff; 
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Add smooth transitions */
+}
+
+.navbar a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    font-size: 1rem; 
+    font-family: "Roboto", serif;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: hsl(222, 33%, 68%);
+    border-radius: 5px;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    color: #00f7ff; 
+}

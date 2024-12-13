@@ -1,0 +1,350 @@
+a:link { 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    text-decoration: none; 
+} 
+
+a:active { 
+    text-decoration: none; 
+}
+
+
+/*Portfolios Page CSS Code*/
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures content wraps to the next row if space is insufficient */
+    gap: 20px; /* Adds consistent spacing between cards */
+    padding: 20px;
+    min-height: 400px;
+}
+
+#container div {
+    height: 450px;
+    width: 335px;
+    background: linear-gradient(to bottom, rgba(37, 94, 114, 0.5) 10%, rgba(37, 94, 114, 0.5) 14%, hsl(213, 42%, 13%, 0.7) 10%, hsl(213, 42%, 13%, 0.7) 100%);
+    margin: 50px; /* Adjust margin for better spacing */
+    border-radius: 12%;
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container img {
+    padding-top: 10%; 
+    margin-top: -18%;
+    margin-bottom: -8%;
+    width: 95%; 
+    height: 50%; 
+    object-fit: cover; 
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+#container div:hover {
+    transform: scale(1.1); /* Slightly enlarge the topic on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122) /* Add a glowing border */
+}
+
+#container div:hover img {
+    transform: scale(1.05); /* Enhance image animation slightly */
+}
+
+#container div:hover h1, #container div:hover h2 {
+    color: #00f7ff; 
+}
+
+.topics{
+    margin-top: 30px;
+    text-align: center;
+    width: 20%;
+    margin-bottom: -50px;
+}
+
+
+.topics h1{
+    text-align: center;
+    background: rgba(37, 94, 114, 0.5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 100px;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+}
+
+
+.topics h2{
+    text-align: center;
+    background: rgba(37, 94, 114, 0.5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 1%;
+    border-radius: 100px;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+}
+
+.portfolios-page {
+    position: relative; 
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+    flex-direction: column; 
+    background-image: none; 
+    overflow: hidden;
+}
+
+.portfolios-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bgimg14.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: -1; 
+}
+
+
+
+.references {
+    z-index: 1; 
+    width: 100%;
+    size: 20px;
+    cursor: pointer;
+    padding: 20px 40px;
+    background-color: rgba(37, 94, 114, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    position: relative;
+    top: -25px; /* Moves the button upward */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Add smooth transitions */
+    font-family: "Roboto", serif;
+}
+
+.references:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    background-color: rgba(53, 133, 162, 0.5);
+    color: #00f7ff; 
+}
+
+
+/*About Page*/
+
+.pic{
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    text-align: center;
+    background: rgb(87, 87, 248);
+    float: right;
+    margin-right: 35%;
+    transform: scale(0.45);
+    border-radius: 50%;
+}
+
+.pic img{
+    border-radius: 50%;
+    border: 10px solid #131F2E;
+}
+
+.about{
+    background-image: url('images/bgimg2.png');
+    background-repeat: no-repeat;
+    background-attachment: fill;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    pointer-events: none; 
+    z-index: 1;           
+}
+
+.about * {
+    position: relative;
+    z-index: 2;           
+}
+
+.about-page h1{
+    text-align: center;
+    background: rgba(37, 94, 114, 0.5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 250px;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left:5%;
+    margin-top: 7%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+}
+
+
+
+.about-page h2{
+    background: rgba(22, 52, 62, 0.5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 600px;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left:7%;
+    margin-top: 2%;
+    color: #AFBDF8;
+    font-family: "Roboto", serif;
+}
+
+
+/* FRONTPAGE CSS CODE */
+
+.homepage-body {
+    position: relative; 
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+    flex-direction: column; 
+
+    background-image: none; 
+    overflow: hidden; 
+}
+
+.homepage-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/frontpage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1; 
+}
+
+.title {
+    z-index: 1; 
+    font-size: 3.5rem;          
+    text-align: center;       
+    color: #AFBDF8;              
+    font-family: "Roboto", serif;
+  font-weight: 3000;
+  font-style: italic;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.enter-button {
+    z-index: 1; 
+    size: 25px;
+    cursor: pointer;
+    padding: 20px 40px;
+    background-color: rgba(37, 94, 114, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Add smooth transitions */
+    font-family: "Roboto", serif;
+}
+
+.enter-button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+}
+
+
+.enter-button:hover {
+    background-color: rgba(53, 133, 162, 0.5);
+    color: #00f7ff; 
+}
+
+.enter-button{
+    cursor: pointer;
+}
+
+/*Navbar Code*/
+
+.navbar {
+    background-color: rgb(9, 66, 82); /* Semi-transparent white */
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 10; /* Ensure it’s above other content */
+    box-shadow: 0px 2px 5px rgba(86, 87, 88, 0.1); /* Add shadow for better visibility */
+    opacity: 0.5;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style: none; 
+    margin: 0;
+    padding: 10px 0; 
+}
+
+.navbar li {
+    margin: 0 33px; /* Space between links */
+}
+
+.navbar li:hover{
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    color: #00f7ff; 
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Add smooth transitions */
+}
+
+.navbar a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    font-size: 1rem; 
+    font-family: "Roboto", serif;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: hsl(222, 33%, 68%);
+    border-radius: 5px;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 20px 10px rgb(63, 63, 122); /* Add a glowing border */
+    color: #00f7ff; 
+}
+
+
